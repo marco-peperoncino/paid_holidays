@@ -11,6 +11,7 @@ date = date.date()  # datetimeをdateに変換
 
 # 半年後の日付（最初の有給付与日）
 date = date + relativedelta(months=6)
+print('================================')
 print('付与日：{0}　付与日数：{1}'.format(date, paid_holidays_list[cnt]))
 cnt += 1
 
@@ -38,3 +39,5 @@ while year <= datetime.datetime.today().year:
 
     year += 1
     date = datetime.date(year=year, month=1, day=1)
+
+print('================================')
